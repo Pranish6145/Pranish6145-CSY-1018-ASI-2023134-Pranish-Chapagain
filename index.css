@@ -70,11 +70,52 @@ header {
     transform: translateX(-51%);
     transition: width 0.3s;
 }
+
 .leet ul li a:hover::after {
     width:100%;
 }
+
 main{
     margin-top: 101px;
     text-align: center;
     padding: 21px;
 }
+
+.Football{
+    font-size: 2.5em;
+    margin-bottom:11px;
+    opacity:1;
+    text-shadow:0 0 6px rgb(254, 253, 247 ) ;
+    animation: shimerTextShadow 3s linear infinite alternate;
+}
+@keyframes shimmerTextShadow {
+    0% {
+        text-shadow:0 0 4px rgba(254, 254, 255, 0.7)
+    }
+    100% {
+        text-shadow: 0 0 21px rgba(254, 254,255, 0.7);
+
+    }
+    
+}
+.Book{
+    background-color: transparent;
+    border: 3px solid #13c697;
+    padding: 9px 19px;
+    font-size: 1.5em;
+    border-radius: 6px;
+    color:#fff;
+}
+.Book a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.copy {
+    font-size:1.5em;
+    margin-bottom:19px;
+}
+.MainIntro p{
+    font-size: 1.1em;
+    margin-bottom: 31px;
+}
+
