@@ -3,9 +3,9 @@ body{
     padding:0;
     line-height: 1.5;
     position: relative;
-    color:rgb(9, 140, 255);
+    color:rgb(255 255 255);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+   
 
 }
 
@@ -15,11 +15,23 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url(Images/backgroundimage.jpg);
+    height: 100%;
+    background-image: url('Images/backgroundimage.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     z-index: -1;
+}
+
+header {
+    padding:21px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 10001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .leet{
@@ -60,4 +72,9 @@ body::before {
 }
 .leet ul li a:hover::after {
     width:100%;
+}
+main{
+    margin-top: 101px;
+    text-align: center;
+    padding: 21px;
 }
