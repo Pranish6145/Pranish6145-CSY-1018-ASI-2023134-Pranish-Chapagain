@@ -128,6 +128,7 @@ main{
         position:fixed;
         background-color: rgba(0,0,0,0.7);
         z-index:998;
+        padding: 0;
     }
     /*It changes the first bar to X symbol to cut*/
     #leet-toggle:checked + header .bar:nth-child(1) {
