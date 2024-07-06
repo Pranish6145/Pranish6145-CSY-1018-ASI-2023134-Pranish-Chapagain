@@ -83,6 +83,28 @@ main{
     text-align: center;
     padding: 21px;
 }
+.sitereport-container{
+    background-color: rgb(37 40 84 / 70%);
+    border:1px solid #ffd1d1;
+    padding:19px;
+    border-radius:9px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content: space-between;
+}
+.sitereport-text{
+    text-align: center;
+    margin-bottom:19px;
+}
+.sitereport-text h1{
+    font-size: 1.5em;
+    margin-bottom: 11px;
+}
+.sitereport-text p{
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
 /*Styling the footer page */
 .pagefooter{
     background-color: rgb(20 35 89 / 70%);
