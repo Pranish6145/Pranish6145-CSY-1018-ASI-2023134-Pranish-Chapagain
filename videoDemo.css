@@ -98,19 +98,22 @@ main{
 }
 /*Media query for making the site responsive*/
 @media only screen and (max-width:768px) {
-    .leet ul{
-        display:none;
+    html{/*to prevent horizontal scrolling in small screens*/
+        overflow-x: hidden;
     }
-    .leet-toggle{
-        display: none;
+    .leet ul{
+        display:none; /*this hides the menu*/
+    }
+    #leet-toggle{
+        display: none;/*This hides the checkbox */
     }
     .hamburger{
-        display: block;
+        display: block;/*This shows the hamburger icon*/
         cursor:pointer;
         padding:11px;
     }
     .bar {
-        display: block;
+        display: block;/*It styles the three bars in hamburger icon*/
         width:24px;
         height:3px;
         background-color: #fff;
@@ -118,8 +121,9 @@ main{
         transition: transform 0.3s ease;
     
     }
-    #leet-toggle:checked + header nav ul {
-        display: flex;
+    /*It shows the menu when checkbox gets ticked*/
+    #leet-toggle:checked ~ nav ul {
+        display: flex; /*Shows menu when clicked*/
         flex-direction: column;
         position:absolute;
         top:61px;
@@ -127,14 +131,18 @@ main{
         width:100%;
         background-color: rgba(0,0,0,0.7);
         z-index:998;
+        padding:0;
     }
+    /*It changes the first bar to X symbol to cut*/
     #leet-toggle:checked + header .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
 
     }
+    /*It hides the second bar*/
     #leet-toggle:checked + header .bar:nth-child(2) {
         opacity: 0;
     }
+    /*It changes the third bar to make X icon*/
     #leet-toggle:checked + header .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
