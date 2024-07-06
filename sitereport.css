@@ -96,3 +96,47 @@ main{
     align-items: center;
     box-shadow: 0 -2px 4px rgba(0 0 0 0.2);
 }
+/*Media query for making the site responsive*/
+@media only screen and (max-width:768px) {
+    .leet ul{
+        display:none;
+    }
+    .leet-toggle{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor:pointer;
+        padding:11px;
+    }
+    .bar {
+        display: block;
+        width:24px;
+        height:3px;
+        background-color: #fff;
+        margin: 4px auto;
+        transition: transform 0.3s ease;
+    
+    }
+    #leet-toggle:checked + header nav ul {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top:61px;
+        left:0;
+        width:100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index:998;
+    }
+    #leet-toggle:checked + header .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    #leet-toggle:checked + header .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #leet-toggle:checked + header .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
