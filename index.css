@@ -66,7 +66,7 @@ header {
 .leet ul li a::after {
     content: "";
     display: block;
-    background-color: #13c697;
+    background-color: #09c08f;
     width: 0;
     height:3px;
     position:absolute;
@@ -132,7 +132,7 @@ main{
     text-align: center;
     position: absolute;
     width:100%;
-    top:220%;/*to adjust the footer  at the bottom*/
+    top:210%;/*to adjust the footer  at the bottom*/
     justify-content: center;
     align-items: center;
     box-shadow: 0 -2px 4px rgba(0 0 0 0.2);
