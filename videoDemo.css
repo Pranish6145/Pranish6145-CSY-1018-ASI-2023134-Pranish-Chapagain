@@ -80,3 +80,16 @@ main{
     text-align: center;
     padding: 21px;
 }
+/*Styling the footer page */
+.pagefooter{
+    background-color: rgb(20 35 89 / 70%);
+    border-top:  2px solid #ff0026;
+    padding:11px;
+    text-align: center;
+    position: absolute;
+    width:100%;
+    top:220%;/*to adjust the footer  at the bottom*/
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0 0 0 0.2);
+}
