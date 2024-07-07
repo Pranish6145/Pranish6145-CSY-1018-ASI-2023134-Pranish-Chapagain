@@ -151,12 +151,13 @@ main{
     text-align: center;
     position: absolute;
     width:100%;
-    top:220%;/*to adjust the footer  at the bottom*/
+    top:120%;/*to adjust the footer  at the bottom*/
     justify-content: center;
     align-items: center;
     box-shadow: 0 -2px 4px rgba(255, 0, 0, 0.2);
     box-sizing: border-box;/*it tries to include padding and border box*/
 }
+
 /*Media query for making the site responsive*/
 /*Media query for making the site responsive*/
 @media only screen and (max-width:768px) {
