@@ -121,6 +121,9 @@ main{
     border-radius: 5px;
 }
 .form-submit{
+    background: none;
+    font: inherit;
+    cursor: pointer;
     display: inline;
     padding:9px 19px;
     background-color: #0976eb;
@@ -145,7 +148,7 @@ main{
     top:190%;/*to adjust the footer  at the bottom*/
     justify-content: center;
     align-items: center;
-    box-shadow: 0 -2px 4px rgba(0 0 0 0.2);
+    box-shadow: 0 -2px 4px rgba(255, 0, 0, 0.2);
     box-sizing: border-box;/*it tries to include padding and border box*/
 }
 /*Media query for making the site responsive*/
