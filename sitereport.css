@@ -114,6 +114,35 @@ main{
     line-height: 1.4;
 }
 
+.Validation-Collections{
+    max-width:1201px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.grid-container-Screenshots{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(301px, 1fr));
+    gap:20px;
+}
+.grid-items-pic{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 11px;
+    overflow: hidden;
+    padding: 0;
+    height: 300px;
+    transition: 0.3s;
+}
+.grid-items-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+}
+.grid-items-pic:hover{
+    transform:scale(1.05);
+}
+
+
 /*Styling the footer page */
 .pagefooter{
     background-color: rgb(20 35 89 / 70%);
