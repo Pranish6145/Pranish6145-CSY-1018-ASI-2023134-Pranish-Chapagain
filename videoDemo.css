@@ -48,6 +48,9 @@ header {
     text-align:right;
     display:flex;
     justify-content: flex-end;
+    flex-wrap: wrap;/*to wrap the list items in the container*/
+    width: 100%;/*makes width of nav-bar to full*/
+    box-sizing: border-box;/*adds border and padding in the elemets height and width */
 }
 
 .leet ul li {
@@ -95,14 +98,17 @@ main{
     justify-content: center;
     align-items: center;
     box-shadow: 0 -2px 4px rgba(0 0 0 0.2);
+    box-sizing: border-box;/*it tries to include padding and border box*/
 }
 /*Media query for making the site responsive*/
+/*Media query for making the site responsive*/
 @media only screen and (max-width:768px) {
-    html{/*to prevent horizontal scrolling in small screens*/
-        overflow-x: hidden;
-    }
+   
     .leet ul{
         display:none; /*this hides the menu*/
+        flex-direction: column;/*Items are stuck vertically*/
+        width:100%;/*it makes the menu for whole screen*/
+        box-sizing: border-box;/*ensures padding and box sizing*/
     }
     #leet-toggle{
         display: none;/*This hides the checkbox */
@@ -128,6 +134,11 @@ main{
         position:fixed;
         background-color: rgba(0,0,0,0.7);
         z-index:998;
+        width: 100%;/*making menu visible all the screen*/
+        text-align: left;/*aligning text to the left*/
+        padding: 0;
+        box-sizing: border-box;/*including padding and border in entire screen*/
+        overflow-x: hidden;/*To prevent horizontal scrolling*/
     }
     /*It changes the first bar to X symbol to cut*/
     #leet-toggle:checked + header .bar:nth-child(1) {
