@@ -13,6 +13,7 @@ body{
 html{
     overflow-x: hidden;
 }
+
 /*pseudo tag is used for better styling*/
 body::before {
     content: "";
@@ -27,7 +28,6 @@ body::before {
     background-position: center;
     z-index: -1;
 }
-
 /*css styled for header*/
 header {
     padding:21px;
@@ -136,7 +136,6 @@ main{
 }
 
 /*Media query for making the site responsive*/
-/*Media query for making the site responsive*/
 @media only screen and (max-width:768px) {
    
     .leet ul{
@@ -201,3 +200,4 @@ main{
         display: flex;
     }
 }
+
