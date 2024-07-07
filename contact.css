@@ -1,3 +1,4 @@
+/*code for the entire page*/
 body{
     margin:0;
     padding:0;
@@ -7,10 +8,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
    
 }
+/*text to prevent horizontal scrolling*/
 html{
     overflow-x: hidden;
 }
-
+/*pseudo tag is used for better styling*/
 body::before {
     content: "";
     position: fixed;
@@ -25,6 +27,7 @@ body::before {
     z-index: -1;
 }
 
+/*css styled for header*/
 header {
     padding:21px;
     position:fixed;
@@ -34,12 +37,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;/*new*/
 }
-
+/*styling for navigation bar*/
 .leet{
     flex:1;
 }
-
+/*styling for the unordered list in the navigation bar*/
 .leet ul{
     list-style-type: none;
     padding:0;
@@ -53,16 +57,18 @@ header {
 }
 
 .leet ul li {
-    display: inline;
+    display: inline;/*makes the list items displayed on single line*/
     margin-right:21px;
     position: relative;
 }
 .leet ul li a{
-    text-decoration: none;
+    text-decoration: none;/*removes the line made below the list  */
     position:relative;
     color:rgb(254, 253, 247);
     padding:6px 11px;
 }
+/*css styling for the hover of thin line appearing below the list items*/
+
 .leet ul li a::after {
     content: "";
     display: block;
